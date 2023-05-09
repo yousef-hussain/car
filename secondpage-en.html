@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AL REHAILI CAR RENTAL</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="shortcut icon" href="images/logo_website.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/man-en.css">
+  <link rel="stylesheet" href="css/responsive-en.css">
+</head>
+<body>
+  <!-- Start header -->
+  <header style="background-image: url('images/bg-header.png');">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 mx-auto">
+          <div class="head">
+            <div class="head-logo-company">
+              <a href="main-en.html">
+                <img src="images/logo.png" alt="">
+              </a>
+            </div>
+            <ul class="head-menu">
+              <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+              <li><a href="index.html">AR</a></li>
+              <li>
+                <div class="bars">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- Start Aside -->
+  <aside>
+    <ul class="links-aside">
+      <li><a class="active" href="#">Main</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Our Branches</a></li>
+      <li><a href="#">Our Team</a></li>
+      <li><a href="#">Apply Membership</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </aside>
+  <!-- End Aside -->
+
+  <!-- ٍStart search result section  -->
+  <section class="search-results" style="background-image: url('images/bg-follow-us.png');">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-10 mx-auto">
+          <div class="result-search">
+            <h2>Search Results</h2>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="main-en.html">Main</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Search Results</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End search result section  -->
+
+  <!-- Start Data Search Section -->
+  <section class="data-search">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-10 mx-auto">
+          <div class="search-data">
+            <div class="row">
+              <div class="col-12 col-lg-4 order-2 order-lg-1">
+                <div class="booking-data">
+                  <div class="title-booking-data">
+                    <h4><i class="fa-solid fa-list list-icon"></i> Booking Details</h4>
+                    <i class="fa-solid fa-pen pen"></i>
+                  </div>
+                  <div class="place-input">
+                    <i class="fa-solid fa-location-pin location"></i>
+                    <p>Place Receipt and Delivery</p>
+                  </div>
+                  <label class="place-text">The exact location is shown here like this</label>
+                  
+                  <div class="receipt-time">
+                    <i class="fa-regular fa-clock clock"></i>
+                    <p>Place of Receipt and Delivery</p>
+                  </div>
+                  <label class="receipt-time-text">Place of receipt and delivery</label>
+                  <div class="delivery-time">
+                    <i class="fa-regular fa-clock clock"></i>
+                    <p>Place of Receipt and Delivery</p>
+                  </div>
+                  <label class="delivery-time-text">Place of receipt and delivery</label>
+                </div>
+                <form class="filter-cars">
+                  <h4><i class="fa-solid fa-filter filter-icon"></i> Filter Results</h4>
+                  <!-- Start Brand -->
+                  <a class="brand-text btn" data-bs-toggle="collapse" href="#brand-form" role="button" aria-expanded="false" aria-controls="brand-form">
+                    <i class="fa-solid fa-angle-down angle"></i> Brand
+                  </a>
+                  <div class="brand-form collapse show" id="brand-form">
+                    <div class="typeCars">
+                      <div class="brand-search">
+                        <input type="search" placeholder="search">
+                        <button><i class="fa-solid fa-magnifying-glass search-icon"></i></button>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="typeCar1">
+                        <label class="form-check-label" for="typeCar1">Audi</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="typeCar2">
+                        <label class="form-check-label" for="typeCar2">BMW</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="typeCar3">
+                        <label class="form-check-label" for="typeCar3">Volvo</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="typeCar4">
+                        <label class="form-check-label" for="typeCar4">Alfa Romeo</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="typeCar5">
+                        <label class="form-check-label" for="typeCar5">Audi</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="typeCar6">
+                        <label class="form-check-label" for="typeCar6">Volvo</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="typeCar7">
+                        <label class="form-check-label" for="typeCar7">Alfa Romeo</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="typeCar8">
+                        <label class="form-check-label" for="typeCar8">BMW</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Brand -->
+                  <!-- Start Category -->
+                  <a class="category-text btn" data-bs-toggle="collapse" href="#category-form" role="button" aria-expanded="false" aria-controls="category-form">
+                    <i class="fa-solid fa-angle-down angle"></i> Category
+                  </a>
+                  <div class="category-form collapse show" id="category-form">
+                    <div class="options">
+                      <div class="category-search">
+                        <input type="search" placeholder="search">
+                        <button><i class="fa-solid fa-magnifying-glass search-icon"></i></button>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="category1">
+                        <label class="form-check-label" for="category1">select</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="category2">
+                        <label class="form-check-label" for="category2">select</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="category3">
+                        <label class="form-check-label" for="category3">select</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="category4">
+                        <label class="form-check-label" for="category4">select</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="category5">
+                        <label class="form-check-label" for="category5">select</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="category6">
+                        <label class="form-check-label" for="category6">select</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="category7">
+                        <label class="form-check-label" for="category7">select</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="category8">
+                        <label class="form-check-label" for="category8">select</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end Category -->
+                  <!-- Start Specifications -->
+                  <a class="specifications-text btn" data-bs-toggle="collapse" href="#specifications-form" role="button" aria-expanded="false" aria-controls="specifications-form">
+                    <i class="fa-solid fa-angle-down angle"></i> Specifications
+                  </a>
+                  <div class="specifications-form collapse show" id="specifications-form">
+                    <div class="options">
+                      <div class="specifications-search">
+                        <input type="search" placeholder="search">
+                        <button><i class="fa-solid fa-magnifying-glass search-icon"></i></button>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="specification1">
+                        <label class="form-check-label" for="specification1">select</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="specification2">
+                        <label class="form-check-label" for="specification2">select</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="specification3">
+                        <label class="form-check-label" for="specification3">select</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="specification4">
+                        <label class="form-check-label" for="specification4">select</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="specification5">
+                        <label class="form-check-label" for="specification5">select</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="specification6">
+                        <label class="form-check-label" for="specification6">select</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="specification7">
+                        <label class="form-check-label" for="specification7">select</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="specification8">
+                        <label class="form-check-label" for="specification8">select</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Specifications -->
+                  <!-- Start Miles -->
+                  <a class="miles-text btn" data-bs-toggle="collapse" href="#miles-form" role="button" aria-expanded="false" aria-controls="miles-form">
+                    <i class="fa-solid fa-angle-down angle"></i> Number Of Miles
+                  </a>
+                  <div class="miles-form collapse show" id="miles-form">
+                    <div class="options">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="mile1">
+                        <label class="form-check-label" for="mile1">select</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="mile2">
+                        <label class="form-check-label" for="mile2">select</label>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <a class="range-price-text btn" data-bs-toggle="collapse" href="#range-price-form" role="button" aria-expanded="false" aria-controls="range-price-form">
+                    <i class="fa-solid fa-angle-down angle"></i> Price
+                  </a>
+                  <div class="range-price-form collapse show" id="range-price-form">
+                    <div id="slider-range"></div>
+                    <div class="inputs-prices">
+                      <input type="text" name="min-price" id="min-price">
+                      <input type="text" name="max-price" id="max-price">
+                    </div>
+                  </div>
+                  
+                  <div class="buttons">
+                    <button class="search">Search</button>
+                    <button class="empty-feild" type="reset">Unloading Fields</button>
+                  </div>
+                  <!-- End Miles -->
+                  
+                  <!-- Start Range -->
+                  <!-- End Range -->
+                </form>
+              </div>
+              <div class="col-12 col-lg-8 order-1 order-lg-2">
+                <div class="menu-search">
+                  <ul class="menu-title">
+                    <p>Sort By</p>
+                    <li class="active">Closest to You</li>
+                    <li>Cheapest</li>
+                    <li>Most Requested</li>
+                    <li>Latest</li>
+                    <li>Performances</li>
+                  </ul>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="header-item">
+                        <h6 class="elements">Show <span class="show-elem">5</span>  results out of  <span class="all-elem">234</span></h6>
+                        <nav aria-label="Page navigation">
+                          <ul class="pagination">
+                            <li class="page-item">
+                              <a class="page-link disabled" href="#" aria-label="Previous">
+                                <span aria-hidden="true"><i class="fa-solid fa-angle-left angle-icon"></i></span>
+                              </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true"><i class="fa-solid fa-angle-right angle-icon"></i></span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                      <div class="box-card">
+                        <div class="card-image">
+                          <img src="images/bg-car-4.png" alt="">
+                          <span class="discount">50%</span>
+                          <span class="available">off</span>
+                        </div>
+                        <div class="text-card">
+                          <div class="text-card-body">
+                            <div class="name-car">
+                              <h6>The car type shown here and the model</h6>
+                              <div class="evaluation">
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-regular fa-star star"></i>
+                              </div>
+                            </div>
+                            <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> Instead of <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">today</span></p>
+                            <p class=" driver-cost">The cost of the driver is$ 20 / day (8 hours) + $ 4 per hour increase</p>
+                            <div class="car-info">
+                              <ul class="info">
+                                <li><i class="fa-regular fa-user info-icons"></i> Passengers : <span>4</span></li>
+                                <li><i class="fa-solid fa-car info-icons"></i> Doors : <span>3</span></li>
+                                <li><i class="fa-solid fa-briefcase info-icons"></i> small bag</li>
+                              </ul>
+                              <ul class="info">
+                                <li> <i class="fa-solid fa-briefcase info-icons"></i> large bag</li>
+                                <li> <i class="fa-solid fa-briefcase info-icons"></i> Automatic</li>
+                                <li><i class="fa-solid fa-fan info-icons"></i> Air Conditioner</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="total">
+                            <p class="total-mony"> Total 5 days: <span class="price-total">$324</span> Instead of <span>$406</span></p>
+                            <form>
+                              <button>Book now</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="box-card">
+                        <div class="card-image">
+                          <img src="images/bg-car-7.png" alt="">
+                          <span class="discount">50%</span>
+                          <span class="available">off</span>
+                        </div>
+                        <div class="text-card">
+                          <div class="text-card-body">
+                            <div class="name-car">
+                              <h6>The car type shown here and the model</h6>
+                              <div class="evaluation">
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-regular fa-star star"></i>
+                              </div>
+                            </div>
+                            <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> Instead of <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">today</span></p>
+                            <p class=" driver-cost">The cost of the driver is$ 20 / day (8 hours) + $ 4 per hour increase</p>
+                            <div class="car-info">
+                              <ul class="info">
+                                <li><i class="fa-regular fa-user info-icons"></i> Passengers : <span>4</span></li>
+                                <li><i class="fa-solid fa-car info-icons"></i> Doors : <span>3</span></li>
+                                <li><i class="fa-solid fa-briefcase info-icons"></i> small bag</li>
+                              </ul>
+                              <ul class="info">
+                                <li> <i class="fa-solid fa-briefcase info-icons"></i> large bag</li>
+                                <li> <i class="fa-solid fa-briefcase info-icons"></i> Automatic</li>
+                                <li><i class="fa-solid fa-fan info-icons"></i> Air Conditioner</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="total">
+                            <p class="total-mony"> Total 5 days: <span class="price-total">$324</span> Instead of <span>$406</span></p>
+                            <form>
+                              <button>Book now</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="box-card">
+                        <div class="card-image">
+                          <img src="images/bg-car-2.png" alt="">
+                          <span class="new">new</span>
+                          <span class="discount">50%</span>
+                          <span class="available">off</span>
+                        </div>
+                        <div class="text-card">
+                          <div class="text-card-body">
+                            <div class="name-car">
+                              <h6>The car type shown here and the model</h6>
+                              <div class="evaluation">
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-regular fa-star star"></i>
+                              </div>
+                            </div>
+                            <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> Instead of <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">today</span></p>
+                            <p class=" driver-cost">The cost of the driver is$ 20 / day (8 hours) + $ 4 per hour increase</p>
+                            <div class="car-info">
+                              <ul class="info">
+                                <li><i class="fa-regular fa-user info-icons"></i> Passengers : <span>4</span></li>
+                                <li><i class="fa-solid fa-car info-icons"></i> Doors : <span>3</span></li>
+                                <li><i class="fa-solid fa-briefcase info-icons"></i> small bag</li>
+                              </ul>
+                              <ul class="info">
+                                <li> <i class="fa-solid fa-briefcase info-icons"></i> large bag</li>
+                                <li> <i class="fa-solid fa-briefcase info-icons"></i> Automatic</li>
+                                <li><i class="fa-solid fa-fan info-icons"></i> Air Conditioner</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="total">
+                            <p class="total-mony"> Total 5 days: <span class="price-total">$324</span> Instead of <span>$406</span></p>
+                            <form>
+                              <button>Book now</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="box-card">
+                        <div class="card-image">
+                          <img src="images/bg-car-5.png" alt="">
+                          <span class="discount">50%</span>
+                          <span class="available">off</span>
+                        </div>
+                        <div class="text-card">
+                          <div class="text-card-body">
+                            <div class="name-car">
+                              <h6>The car type shown here and the model</h6>
+                              <div class="evaluation">
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-regular fa-star star"></i>
+                              </div>
+                            </div>
+                            <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> Instead of <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">today</span></p>
+                            <p class=" driver-cost">The cost of the driver is$ 20 / day (8 hours) + $ 4 per hour increase</p>
+                            <div class="car-info">
+                              <ul class="info">
+                                <li><i class="fa-regular fa-user info-icons"></i> Passengers : <span>4</span></li>
+                                <li><i class="fa-solid fa-car info-icons"></i> Doors : <span>3</span></li>
+                                <li><i class="fa-solid fa-briefcase info-icons"></i> small bag</li>
+                              </ul>
+                              <ul class="info">
+                                <li> <i class="fa-solid fa-briefcase info-icons"></i> large bag</li>
+                                <li> <i class="fa-solid fa-briefcase info-icons"></i> Automatic</li>
+                                <li><i class="fa-solid fa-fan info-icons"></i> Air Conditioner</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="total">
+                            <p class="total-mony"> Total 5 days: <span class="price-total">$324</span> Instead of <span>$406</span></p>
+                            <form>
+                              <button>Book now</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="box-card">
+                        <div class="card-image">
+                          <img src="images/bg-car-4.png" alt="">
+                          <span class="new">new</span>
+                          <span class="discount">50%</span>
+                          <span class="available">off</span>
+                        </div>
+                        <div class="text-card">
+                          <div class="text-card-body">
+                            <div class="name-car">
+                              <h6>The car type shown here and the model</h6>
+                              <div class="evaluation">
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-regular fa-star star"></i>
+                                <i class="fa-regular fa-star star"></i>
+                              </div>
+                            </div>
+                            <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> Instead of <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">today</span></p>
+                            <p class=" driver-cost">The cost of the driver is$ 20 / day (8 hours) + $ 4 per hour increase</p>
+                            <div class="car-info">
+                              <ul class="info">
+                                <li><i class="fa-regular fa-user info-icons"></i> Passengers : <span>4</span></li>
+                                <li><i class="fa-solid fa-car info-icons"></i> Doors : <span>3</span></li>
+                                <li><i class="fa-solid fa-briefcase info-icons"></i> small bag</li>
+                              </ul>
+                              <ul class="info">
+                                <li> <i class="fa-solid fa-briefcase info-icons"></i> large bag</li>
+                                <li> <i class="fa-solid fa-briefcase info-icons"></i> Automatic</li>
+                                <li><i class="fa-solid fa-fan info-icons"></i> Air Conditioner</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="total">
+                            <p class="total-mony"> Total 5 days: <span class="price-total">$324</span> Instead of <span>$406</span></p>
+                            <form>
+                              <button>Book now</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <nav class="pagination-bottom" aria-label="Page navigation" style="float: right;">
+                        <ul class="pagination">
+                          <li class="page-item">
+                            <a class="page-link disabled" href="#" aria-label="Previous">
+                              <span aria-hidden="true"><i class="fa-solid fa-angle-left angle-icon"></i></span>
+                            </a>
+                          </li>
+                          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true"><i class="fa-solid fa-angle-right angle-icon"></i></span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Data Search Section -->
+
+  <!-- Start Footer -->
+  <footer>
+    <div class="footer-head" style="background-image: url('images/bg-follow-us.png');">
+      <h2>Follow us via e-mail</h2>
+    <form>
+      <input type="email" placeholder="Enter your email address" required>
+      <button><i class="fa-solid fa-sort-down sort"></i></button>
+    </form>
+    </div>
+    <div class="footer-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 mx-auto">
+            <div class="row g-5">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="connect-us">
+                  <h2>Contact Us</h2>
+                  <p><a href="mailTo:"><i class="fa-regular fa-envelope email"></i> <span>Info@alrehaili.com</span></a></p>
+                  <p><a href="tel:"><i class="fa-solid fa-phone-flip phone"></i> <span> Unified number : 01000000000</span></a></p>
+                  <ul class="communication-icons">
+                    <li><a href="#"><i class="fa-brands fa-facebook icon"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in icon"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter icon"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube icon"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="speed-links">
+                  <h2>Quick Links</h2>
+                  <div class="links">
+                    <ul class="main">
+                      <li><a href="#">Main</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Our Branches</a></li>
+                      <li><a href="#">Our Team</a></li>
+                      <li><a href="#">Apply Membership</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <ul class="subsidiary">
+                      <li><a href="#">Photo Album</a></li>
+                      <li><a href="#">News</a></li>
+                      <li><a href="#">Performances</a></li>
+                      <li><a href="#">Terms and  Conditions</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="download-programming">
+                  <h2>Download Software</h2>
+                  <a href="#">
+                    <img src="images/google-play.png" alt="google play">
+                  </a>
+                  <a href="#">
+                    <img src="images/app-store.png" alt="app store">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="footer-foot">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 mx-auto">
+            <div class="space-foot">
+              <span>All rights reserved &copy; 2020</span>
+              <span>Dynamic design and development of Information Technology</span>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Start Chat -->
+  <div class="chat-button" data-active="active">
+    <i class="fa-solid fa-comments message-icon"></i>
+    <span>2</span>
+  </div>
+  <div class="chat-message d-none">
+    <span class="delete"><i class="fa-solid fa-xmark del-icon"></i></span>
+    <div class="chats-box">
+      <div class="chat-interface">
+        <p class="text-center">Welcome, we are here to help you, <br/>contact us now</p>
+        <img src="images/support-employee.png" alt="">
+        <span>Available Now</span>
+      </div> 
+      <div class="notes">
+        <p>We Will Reply to You Within Five Minutes</p>
+      </div>
+      <div class="chats">
+        <p class="admin">Your welcome is usually answered within minutes</p>
+        <p class="user">Thank you I want to get some answers about your company</p>
+        <p class="admin">Your welcome is usually answered within minutes</p>
+        <p class="user">Thank you I want to get some answers about your company</p>
+        <p class="user">Thank you I want to get some answers about your company</p>
+      </div>
+    </div>
+    <form class="message-text">
+      <input type="text" placeholder="Write Your Message Here" required>
+      <button><i class="fa-regular fa-paper-plane send-icon"></i></button>
+    </form>
+  </div>
+  <!-- End Chat -->
+
+
+
+
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    /************************ Start collapse to filter ******************/ 
+    if (window.outerWidth < 992 ) {
+      let linkCollapse = document.querySelectorAll(".data-search .filter-cars a"),
+          elementCollapse = document.querySelectorAll(".filter-cars .collapse");
+
+      linkCollapse.forEach((item) => {
+      item.classList.add("collapsed");
+      });
+      
+      elementCollapse.forEach((item) => {
+      item.classList.remove("show");
+      });
+    }
+    /************************ End collapse to filter ******************/ 
+    /************************ Start Input Slider Range  ******************/ 
+    $( function() {
+      $( "#slider-range" ).slider({
+        range: true,
+        min: 0,
+        max: 1000,
+        values: [ 100, 800 ],
+        slide: function( event, ui ) {
+          $("#min-price").val("$ " + ui.values[ 0 ]);
+          $("#max-price").val("$ " + ui.values[ 1 ]);
+        }
+      });
+      $("#min-price").val("$ " + $( "#slider-range" ).slider( "values", 0 ));
+      $("#max-price").val("$ " + $( "#slider-range" ).slider( "values", 1 ))
+    } );
+    /*********************** End Input Slider Range ******************/
+  </script>
+</body>
+</html>

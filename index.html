@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الرحيلي لتأجير السيارات</title>
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="shortcut icon" href="images/logo_website.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Start header -->
+  <header style="background-image: url('images/bg-header.png');">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 mx-auto">
+          <div class="head">
+            <div class="head-logo-company">
+              <a href="index.html">
+                <img src="images/logo.png" alt="">
+              </a>
+            </div>
+            <ul class="head-menu">
+              <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+              <li><a href="main-en.html">EN</a></li>
+              <li>
+                <div class="bars">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+  <!-- Start Aside -->
+  <aside>
+    <ul class="links-aside">
+      <li><a class="active" href="#">الرئيسية</a></li>
+      <li><a href="#">من نحن</a></li>
+      <li><a href="#">فروعنا</a></li>
+      <li><a href="#">فريقنا</a></li>
+      <li><a href="#">طلب عضوية</a></li>
+      <li><a href="#">تواصل معنا</a></li>
+    </ul>
+  </aside>
+  <!-- End Aside -->
+  <!-- Start Section Main -->
+  <section class="main">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-lg-6 p-0">
+          <div class="main-content">
+            <form action="secondpage.html">
+              <h3>ابحث عن سيارتك الان</h3>
+              <div class="form-row">
+                <div class="form-group col-10 col-md-6 col-lg-10 col-xl-6 has-validation">
+                  <label for="receipt-delivery" class="receipt-delivery">الاستلام والتسليم</label>
+                  <input type="text" class="form-control" id="receipt-delivery" placeholder="المطار" required>
+                </div>
+                  <div class="form-group col-5 col-md-3 col-lg-5 col-xl-3 d-none">
+                    <label for="receipt" class="receipt">الاستلام</label>
+                    <input type="text" class="form-control" id="receipt" placeholder="المطار">
+                  </div>
+                  <div class="form-group col-5 col-md-3 col-lg-5 col-xl-3 d-none">
+                    <label for="delivery" class="delivery">التسليم</label>
+                    <input type="text" class="form-control" id="delivery" placeholder="المطار">
+                  </div>
+                <div class="form-group col-5 col-md-2 col-lg-5 col-xl-2">
+                  <label for="Date-of-receipt" class="Date-of-receipt-text">تاريخ الاستلام</label>
+                  <input type="datetime-local" class="form-control" id="Date-of-receipt" value="2018-06-12T19:30" required>
+                </div>
+                <div class="form-group col-5 col-md-2 col-lg-5 col-xl-2">
+                  <label for="delivery-date" class="delivery-date-text">تاريخ التسليم</label>
+                  <input type="datetime-local" class="form-control" id="delivery-date" value="2018-06-12T19:30" required>
+                </div>
+                <div class="form-group col-12 col-sm-1">
+                    <button type="submit">بحث</button>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="check-receipt-delivery" checked>
+                  <label class="form-check-label" for="check-receipt-delivery">التسليم مكان الاستلام</label>
+                </div>
+              </div>
+            </form>
+            <div class="main-area d-none" id="box-map">
+              <div class="places">
+                <div class="place">
+                  <h6><i class="fa-solid fa-plane plane-icon"></i>(1) اسم المطار</h6>
+                  <p>فرع المطار الأول</p>
+                </div>
+                <div class="place">
+                  <h6><i class="fa-solid fa-plane plane-icon"></i>(2) اسم المطار</h6>
+                  <p>فرع المطار الثاني</p>
+                </div>
+                <div class="place">
+                  <h6><i class="fa-solid fa-plane plane-icon"></i>(3) اسم المطار</h6>
+                  <p>فرع المطار الثالث</p>
+                </div>
+                <div class="place">
+                  <h6><i class="fa-solid fa-plane plane-icon"></i>(4) اسم المطار</h6>
+                  <p>فرع المطار الرابع</p>
+                </div>
+                <div class="place">
+                  <h6><i class="fa-solid fa-plane plane-icon"></i>(5) اسم المطار</h6>
+                  <p>فرع المطار الخامس </p>
+                </div>
+                <div class="place">
+                  <h6><i class="fa-solid fa-plane plane-icon"></i>(6) اسم المطار</h6>
+                  <p>فرع المطار السادس </p>
+                </div>
+                <div class="place">
+                  <h6><i class="fa-solid fa-plane plane-icon"></i>(7) اسم المطار</h6>
+                  <p>فرع المطار السابع </p>
+                </div>
+                <div class="place">
+                  <h6><i class="fa-solid fa-plane plane-icon"></i>(8) اسم المطار</h6>
+                  <p>فرع المطار الثامن </p>
+                </div>
+                <div class="place">
+                  <h6><i class="fa-solid fa-plane plane-icon"></i>(9) اسم المطار</h6>
+                  <p>فرع المطار التاسع </p>
+                </div>
+                <div class="place">
+                  <h6><i class="fa-solid fa-plane plane-icon"></i>(10) اسم المطار</h6>
+                  <p>فرع المطار العاشر </p>
+                </div>
+              </div>
+              <div class="map">
+                <div class="map-title">
+                  <h6 class="airport-name">اسم المطار</h6>
+                  <p class="airport-branch">عنوان المطار</p>
+                  <p> رقم الهاتف :<span class="phone"> 01002200589</span></p>
+                  <p class="appointment"><span>المواعيد : </span> <span class="start-appointment">ص 08:00 </span> - <span class="end-aoointment">م 05:00</span></p>
+                </div>
+                <div class="google-map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d70872.85469688725!2d39.88864922230175!3d21.379949218690864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b4ced818775%3A0x98ab2469cf70c9ce!2z2YXZg9ipINin2YTZhdmD2LHZhdipINin2YTYs9i52YjYr9mK2Kk!5e0!3m2!1sar!2s!4v1675060384653!5m2!1sar!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="main-foot-bar">
+              <img class="d-none d-sm-block" src="images/car.png" alt=""> <!--class="d-none d-xl-block" -->
+              <div class="listen-with-discount">
+                <h2>استمتع برحلتك مع عائلتك  </h2>
+                <p>احجز 10 أيام بخصم <span>20%</span></p>
+              </div>
+            </div>
+            <a class="btn-book-now" href="secondpage.html">
+              <h5>احجز الان</h5>
+              <p>نوع السيارة</p>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 p-0 d-none d-lg-block">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image: url('images/bg-main-1.jpg');">
+              </div>
+              <div class="swiper-slide" style="background-image: url('images/bg-main-2.jpg');">
+              </div>
+              <div class="swiper-slide" style="background-image: url('images/bg-main-3.jpg');">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Section Main -->
+
+  <!-- Start Section Filter -->
+  <section class="sec-filter">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 mx-auto">
+          <ul class="filter-menu">
+            <li class="active" data-filter=".nearby">الأقرب اليك</li>
+            <li data-filter=".cheap">الأرخص</li>
+            <li data-filter=".wanted">الأكثر طلباً</li>
+            <li data-filter=".new">الأحدث</li>
+            <li data-filter=".offers">العروض</li>
+          </ul>
+        </div>
+        <div class="col-10 mx-auto">
+          <div class="grid-height" data-check-height="more">
+            <div class="row g-4 grid">
+              <div class="col-12 col-md-6 col-lg-4 element-item nearby">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-1.png');">
+                      <span class="new">جديدة</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">نوع السيارة يظهر هنا والموديل</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> بدلا من <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">اليوم</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> عدد الركاب : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> الأبواب : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">عرض التفاصيل</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item cheap">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-2.png');">
+                      <span class="new">جديدة</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">نوع السيارة يظهر هنا والموديل</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> بدلا من <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">اليوم</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> عدد الركاب : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> الأبواب : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">عرض التفاصيل</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item wanted">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-3.png');">
+                      <span class="new">جديدة</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">نوع السيارة يظهر هنا والموديل</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> بدلا من <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">اليوم</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> عدد الركاب : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> الأبواب : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">عرض التفاصيل</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item offers">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-4.png');">
+                      <span class="new">جديدة</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">نوع السيارة يظهر هنا والموديل</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> بدلا من <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">اليوم</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> عدد الركاب : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> الأبواب : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">عرض التفاصيل</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item new">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-5.png');">
+                      <span class="new">جديدة</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">نوع السيارة يظهر هنا والموديل</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> بدلا من <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">اليوم</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> عدد الركاب : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> الأبواب : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">عرض التفاصيل</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item offers">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-6.png');">
+                      <span class="new">جديدة</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">نوع السيارة يظهر هنا والموديل</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> بدلا من <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">اليوم</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> عدد الركاب : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> الأبواب : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">عرض التفاصيل</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item cheap">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-6.png');">
+                      <span class="new">جديدة</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">نوع السيارة يظهر هنا والموديل</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> بدلا من <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">اليوم</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> عدد الركاب : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> الأبواب : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">عرض التفاصيل</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item new">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-5.png');">
+                      <span class="new">جديدة</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">نوع السيارة يظهر هنا والموديل</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> بدلا من <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">اليوم</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> عدد الركاب : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> الأبواب : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">عرض التفاصيل</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item nearby">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-4.png');">
+                      <span class="new">جديدة</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">نوع السيارة يظهر هنا والموديل</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> بدلا من <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">اليوم</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> عدد الركاب : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> الأبواب : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">عرض التفاصيل</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item cheap">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-3.png');">
+                      <span class="new">جديدة</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">نوع السيارة يظهر هنا والموديل</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> بدلا من <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">اليوم</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> عدد الركاب : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> الأبواب : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">عرض التفاصيل</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item wanted">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-2.png');">
+                      <span class="new">جديدة</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">نوع السيارة يظهر هنا والموديل</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> بدلا من <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">اليوم</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> عدد الركاب : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> الأبواب : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">عرض التفاصيل</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item offers">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-1.png');">
+                      <span class="new">جديدة</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">نوع السيارة يظهر هنا والموديل</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> بدلا من <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">اليوم</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> عدد الركاب : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> الأبواب : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">عرض التفاصيل</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item new">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-4.png');">
+                      <span class="new">جديدة</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">نوع السيارة يظهر هنا والموديل</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> بدلا من <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">اليوم</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> عدد الركاب : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> الأبواب : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">عرض التفاصيل</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item offers">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-3.png');">
+                      <span class="new">جديدة</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">نوع السيارة يظهر هنا والموديل</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> بدلا من <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">اليوم</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> عدد الركاب : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> الأبواب : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">عرض التفاصيل</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item cheap">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-6.png');">
+                      <span class="new">جديدة</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">نوع السيارة يظهر هنا والموديل</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> بدلا من <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">اليوم</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> عدد الركاب : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> الأبواب : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">عرض التفاصيل</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item new">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-2.png');">
+                      <span class="new">جديدة</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">نوع السيارة يظهر هنا والموديل</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> بدلا من <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">اليوم</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> عدد الركاب : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> الأبواب : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">عرض التفاصيل</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 mx-auto">
+          <span class="show-more">عرض المزيد...</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Section Filter -->
+  
+  <!-- Start Footer -->
+  <footer>
+    <div class="footer-head" style="background-image: url('images/bg-follow-us.png');">
+      <h2>تابعنا عبر البريد الالكتروني</h2>
+    <form>
+      <input type="email" placeholder="ادخل البريد الالكتروني" required>
+      <button><i class="fa-solid fa-sort-down sort"></i></button>
+    </form>
+    </div>
+    <div class="footer-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 mx-auto">
+            <div class="row g-5">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="connect-us">
+                  <h2>تواصل معنا</h2>
+                  <p><a href="mailTo:"><i class="fa-regular fa-envelope email"></i> <span>Info@alrehaili.com</span></a></p>
+                  <p><a href="tel:"><i class="fa-solid fa-phone-flip phone"></i> <span> الرقم الموحد: 01000000000</span></a></p>
+                  <ul class="communication-icons">
+                    <li><a href="#"><i class="fa-brands fa-facebook icon"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in icon"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter icon"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube icon"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="speed-links">
+                  <h2>روابط سريعه</h2>
+                  <div class="links">
+                    <ul class="main">
+                      <li><a href="#">الرئيسية</a></li>
+                      <li><a href="#">من نحن</a></li>
+                      <li><a href="#">فروعنا</a></li>
+                      <li><a href="#">فريقنا</a></li>
+                      <li><a href="#">طلب عضوية</a></li>
+                      <li><a href="#">تواصل معنا</a></li>
+                    </ul>
+                    <ul class="subsidiary">
+                      <li><a href="#">البوم الصور</a></li>
+                      <li><a href="#">الاخبار</a></li>
+                      <li><a href="#">العروض</a></li>
+                      <li><a href="#">الاحكام والشروط</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="download-programming">
+                  <h2>لتحميل البرامج</h2>
+                  <a href="#">
+                    <img src="images/google-play.png" alt="google play">
+                  </a>
+                  <a href="#">
+                    <img src="images/app-store.png" alt="app store">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="footer-foot">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 mx-auto">
+            <div class="space-foot">
+              <span>جميع الحقوق محفوظة &copy; 2020</span>
+              <span>تصميم وتطوير ديناميك لتقنية المعلومات</span>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Start Chat -->
+  <div class="chat-button" data-active="active">
+    <i class="fa-solid fa-comments message-icon"></i>
+    <span>2</span>
+  </div>
+  <div class="chat-message d-none">
+    <span class="delete"><i class="fa-solid fa-xmark del-icon"></i></span>
+    <div class="chats-box">
+      <div class="chat-interface">
+        <p class="text-center">مرحباً بك، نحن هنا لنقوم بمساعدتك، تواصل معنا الان</p>
+        <img src="images/support-employee.png" alt="">
+        <span>متاح الان</span>
+      </div> 
+      <div class="notes">
+        <p>سنقوم بالرد عليك في غضون خمس دقائق</p>
+      </div>
+      <div class="chats">
+        <p class="admin">مرحباً بك عادةً ما يتم الرد خلال دقائق</p>
+        <p class="user">شكرا لك اريد الحصول على بعض الاجوبة عن شركتكم</p>
+        <p class="admin">مرحباً بك عادةً ما يتم الرد خلال دقائق</p>
+        <p class="user">شكرا لك اريد الحصول على بعض الاجوبة عن شركتكم</p>
+        <p class="user">شكرا لك اريد الحصول على بعض الاجوبة عن شركتكم</p>
+      </div>
+    </div>
+    <form class="message-text">
+      <input type="text" placeholder="اكتب رسالتك هنا" required>
+      <button><i class="fa-regular fa-paper-plane send-icon"></i></button>
+    </form>
+  </div>
+  <!-- End Chat -->
+
+
+
+
+
+
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    /************** Start Main Section ****************/
+    // Start Display Input 
+    let checkInput = document.getElementById("check-receipt-delivery"),
+        receiptAndDelivery = document.querySelector(".receipt-delivery"),
+        receipt = document.querySelector(".receipt"),
+        delivery = document.querySelector(".delivery"),
+        receiptAndDeliveryInput = document.getElementById("receipt-delivery"),
+        receiptInput = document.getElementById("receipt"),
+        deliveryInput = document.getElementById("delivery"),
+        boxMap = document.getElementById("box-map");
+
+    checkInput.addEventListener("click", function () {
+      if(this.checked == true ) {
+        console.log(this);
+        receiptAndDelivery.parentElement.classList.add("d-inline-block");
+        receiptAndDelivery.parentElement.classList.remove("d-none");
+
+        receipt.parentElement.classList.remove("d-inline-block");
+        receipt.parentElement.classList.add("d-none");
+
+        delivery.parentElement.classList.remove("d-inline-block");
+        delivery.parentElement.classList.add("d-none");
+
+        // input required
+        receiptAndDeliveryInput.setAttribute("required","true");
+        receiptInput.removeAttribute("required");
+        deliveryInput.removeAttribute("required");
+      } else {
+        receiptAndDelivery.parentElement.classList.add("d-none");
+        receiptAndDelivery.parentElement.classList.remove("d-inline-block");
+
+        receipt.parentElement.classList.remove("d-none");
+        receipt.parentElement.classList.add("d-inline-block");
+
+        delivery.parentElement.classList.remove("d-none");
+        delivery.parentElement.classList.add("d-inline-block");
+
+        // input required
+        receiptAndDeliveryInput.removeAttribute("required");
+        receiptInput.setAttribute("required","true");
+        deliveryInput.setAttribute("required","true");
+      }
+    });
+
+    receiptAndDeliveryInput.oninput = function () {
+      boxMap.classList.remove("d-none");
+      boxMap.classList.add("d-grid");
+      this.setAttribute("checked","");
+    }
+    receiptInput.oninput = function () {
+      boxMap.classList.remove("d-none");
+      boxMap.classList.add("d-grid");
+      this.setAttribute("checked","");
+    }
+    deliveryInput.oninput = function () {
+      boxMap.classList.remove("d-none");
+      boxMap.classList.add("d-grid");
+      this.setAttribute("checked","");
+    }
+    document.addEventListener("click", function (event) {
+      if (event.target.closest(".main-area")) return;
+      boxMap.classList.remove("d-grid");
+      boxMap.classList.add("d-none");
+      receiptAndDeliveryInput.removeAttribute("checked");
+      receiptInput.removeAttribute("checked");
+      deliveryInput.removeAttribute("checked");
+      // receiptAndDeliveryInput.value = "";
+      // receiptInput.value = "";
+      // deliveryInput.value = "";
+
+    });
+    // End Display Input 
+
+
+    // Start Hover to Places 
+    let places = document.querySelectorAll(".main-area .places .place"),
+        airportName = document.querySelector(".map .map-title .airport-name"),
+        airportBranch = document.querySelector(".map .map-title .airport-branch");
+
+    places.forEach(element => {
+      element.addEventListener("mouseover", function () {
+        airportName.textContent = this.children[0].textContent;
+        airportBranch.textContent = this.children[1].textContent;
+      });
+
+      element.addEventListener("click", function () {
+        if (receiptAndDeliveryInput.hasAttribute("checked")) {
+          receiptAndDeliveryInput.value = this.children[0].textContent + " | " + this.children[1].textContent;
+          boxMap.classList.add("d-none");
+        }
+
+        if (receiptInput.hasAttribute("checked")) {
+          receiptInput.value = this.children[0].textContent + " | " + this.children[1].textContent;
+          boxMap.classList.add("d-none");
+        }
+
+        if (deliveryInput.hasAttribute("checked")) {
+          deliveryInput.value = this.children[0].textContent + " | " + this.children[1].textContent;
+          boxMap.classList.add("d-none");
+        }
+      });
+    });
+
+    let placeBox = document.querySelector(".main-area .places");
+    placeBox.addEventListener("mouseout", function () {
+      airportName.textContent = "اسم المطار";
+      airportBranch.textContent = "عنوان المطار";
+    });
+    // End Hover to Places
+
+    // Start Swiper 
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    // End Swiper /
+    /************** End Main Section ****************/
+    /************** Start Section Filter ********************/
+    // Start Element Active in Menu
+    let navFilter = document.querySelectorAll(".filter-menu li");
+    navFilter.forEach( element => {
+      element.addEventListener("click", function () {
+        navFilter.forEach(element => {
+          element.classList.remove("active");
+        });
+        this.classList.add("active");
+      });
+    });
+    // End Element Active in Menu
+
+    // Start Isotope 
+    let $grid = $('.grid').isotope({
+      originLeft: false
+    });
+    $(".filter-menu li").on("click", function () {
+      $grid.isotope({
+        filter : $(this).attr("data-filter")
+      });
+    });
+    // End Isotope
+
+    // Start Input Show More
+
+    let showMore = document.getElementsByClassName("show-more"),
+        heightGide = document.getElementsByClassName("grid-height");
+
+    showMore[0].addEventListener("click", function () {
+      if (heightGide[0].getAttribute("data-check-height") == "more") {
+        heightGide[0].style.height = "auto";
+        showMore[0].textContent = "عرض اقل...";
+        heightGide[0].setAttribute("data-check-height", "less");
+      } else {
+        heightGide[0].style.height = "";
+        showMore[0].textContent = "عرض المزيد...";
+        heightGide[0].setAttribute("data-check-height", "more");
+      }
+    });
+
+    // End Input Show More
+    /***************** End Section Filter *******************/
+  </script>
+</body>
+</html>

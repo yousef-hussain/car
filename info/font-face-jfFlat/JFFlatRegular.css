@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'JFFlatRegular';
+    src: url('../fonts/JFFlatRegular.eot');
+    src: url('../fonts/JFFlatRegular.eot') format('embedded-opentype'),
+        url('../fonts/JFFlatRegular.woff2') format('woff2'),
+        url('../fonts/JFFlatRegular.woff') format('woff'),
+        url('../fonts/JFFlatRegular.ttf') format('truetype'),
+        url('../fonts/JFFlatRegular.svg#JFFlatRegular') format('svg');
+}

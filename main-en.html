@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AL REHAILI CAR RENTAL</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="shortcut icon" href="images/logo_website.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/man-en.css">
+  <link rel="stylesheet" href="css/responsive-en.css">
+</head>
+<body>
+  <!-- Start header -->
+  <header style="background-image: url('images/bg-header.png');">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 mx-auto">
+          <div class="head">
+            <div class="head-logo-company">
+              <a href="main-en.html">
+                <img src="images/logo.png" alt="">
+              </a>
+            </div>
+            <ul class="head-menu">
+              <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+              <li><a href="index.html">AR</a></li>
+              <li>
+                <div class="bars">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- Start Aside -->
+  <aside>
+    <ul class="links-aside">
+      <li><a class="active" href="#">Main</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Our Branches</a></li>
+      <li><a href="#">Our Team</a></li>
+      <li><a href="#">Apply Membership</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </aside>
+  <!-- End Aside -->
+
+  <!-- Start Section Main -->
+  <section class="main">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-lg-6 p-0">
+          <div class="main-content">
+            <form action="secondpage-en.html">
+              <h3>Find your car</h3>
+              <div class="form-row">
+                <div class="form-group col-10 col-md-6 col-lg-10 col-xl-6 has-validation">
+                  <label for="receipt-delivery" class="receipt-delivery">Receipt and Delivery</label>
+                  <input type="text" class="form-control" id="receipt-delivery" placeholder="Airport" required>
+                </div>
+                  <div class="form-group col-5 col-md-3 col-lg-5 col-xl-3 d-none">
+                    <label for="receipt" class="receipt">Receipt</label>
+                    <input type="text" class="form-control" id="receipt" placeholder="Airport" required>
+                  </div>
+                  <div class="form-group col-5 col-md-3 col-lg-5 col-xl-3 d-none">
+                    <label for="delivery" class="delivery">Delivery</label>
+                    <input type="text" class="form-control" id="delivery" placeholder="Airport" required>
+                  </div>
+                <div class="form-group col-5 col-md-2 col-lg-5 col-xl-2">
+                  <label for="Date-of-receipt" class="Date-of-receipt-text">Receipt Date </label>
+                  <input type="datetime-local" class="form-control" id="Date-of-receipt" value="2018-06-12T19:30" required>
+                </div>
+                <div class="form-group col-5 col-md-2 col-lg-5 col-xl-2">
+                  <label for="delivery-date" class="delivery-date-text">Delivery Date</label>
+                  <input type="datetime-local" class="form-control" id="delivery-date" value="2018-06-12T19:30" required>
+                </div>
+                <div class="form-group col-12 col-sm-1">
+                    <button type="submit">search</button>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="check-receipt-delivery" checked>
+                  <label class="form-check-label" for="check-receipt-delivery">Receipt place Delivery</label>
+                </div>
+              </div>
+            </form>
+            <div class="main-area d-none" id="box-map">
+              <div class="places">
+                <div class="place">
+                  <h6><i class="fa-solid fa-plane plane-icon"></i> Airport name (1)</h6>
+                  <p>first airport branch</p>
+                </div>
+                <div class="place">
+                  <h6><i class="fa-solid fa-plane plane-icon"></i> Airport name (2)</h6>
+                  <p>second airport branch</p>
+                </div>
+                <div class="place">
+                  <h6><i class="fa-solid fa-plane plane-icon"></i> Airport name (3)</h6>
+                  <p>third airport branch</p>
+                </div>
+                <div class="place">
+                  <h6><i class="fa-solid fa-plane plane-icon"></i> Airport name (4)</h6>
+                  <p>fourth airport branch</p>
+                </div>
+                <div class="place">
+                  <h6><i class="fa-solid fa-plane plane-icon"></i> Airport name (5)</h6>
+                  <p>fifth airport branch</p>
+                </div>
+                <div class="place">
+                  <h6><i class="fa-solid fa-plane plane-icon"></i> Airport name (6)</h6>
+                  <p>sixth airport branch</p>
+                </div>
+                <div class="place">
+                  <h6><i class="fa-solid fa-plane plane-icon"></i> Airport name (7)</h6>
+                  <p>seventh airport branch</p>
+                </div>
+                <div class="place">
+                  <h6><i class="fa-solid fa-plane plane-icon"></i> Airport name (8)</h6>
+                  <p>eighth airport branch</p>
+                </div>
+                <div class="place">
+                  <h6><i class="fa-solid fa-plane plane-icon"></i> Airport name (9)</h6>
+                  <p>ninth airport branch</p>
+                </div>
+                <div class="place">
+                  <h6><i class="fa-solid fa-plane plane-icon"></i> Airport name (10)</h6>
+                  <p>tenth airport branch</p>
+                </div>
+              </div>
+              <div class="map">
+                <div class="map-title">
+                  <h6 class="airport-name">Airport name</h6>
+                  <p class="airport-branch">Airport address</p>
+                  <p>Phone number :<span class="phone"> 01002200589</span></p>
+                  <p class="appointment"><span>Appointments : </span> <span class="start-appointment"> 08:00 AM</span> - <span class="end-aoointment"> 05:00 PM</span></p>
+                </div>
+                <div class="google-map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d70872.85469688725!2d39.88864922230175!3d21.379949218690864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b4ced818775%3A0x98ab2469cf70c9ce!2z2YXZg9ipINin2YTZhdmD2LHZhdipINin2YTYs9i52YjYr9mK2Kk!5e0!3m2!1sar!2s!4v1675060384653!5m2!1sar!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="main-foot-bar">
+              <img class="d-none d-sm-block" src="images/car.png" alt=""> <!--class="d-none d-xl-block" -->
+              <div class="listen-with-discount">
+                <h2>Enjoy your trip with your family</h2>
+                <p>Book 10 days with discount <span>20%</span></p>
+              </div>
+            </div>
+            <a class="btn-book-now" href="secondpage-en.html">
+              <h5>Book now</h5>
+              <p>type car</p>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 p-0 d-none d-lg-block">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image: url('images/bg-main-1.jpg');">
+              </div>
+              <div class="swiper-slide" style="background-image: url('images/bg-main-2.jpg');">
+              </div>
+              <div class="swiper-slide" style="background-image: url('images/bg-main-3.jpg');">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Section Main -->
+
+  <!-- Start Section Filter -->
+  <section class="sec-filter">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 mx-auto">
+          <ul class="filter-menu">
+            <li class="active" data-filter=".nearby">closest to you</li>
+            <li data-filter=".cheap">the cheapest</li>
+            <li data-filter=".wanted">most requested</li>
+            <li data-filter=".new">the latest</li>
+            <li data-filter=".offers">performances</li>
+          </ul>
+        </div>
+        <div class="col-10 mx-auto">
+          <div class="grid-height" data-check-height="more">
+            <div class="row g-4 grid">
+              <div class="col-12 col-md-6 col-lg-4 element-item nearby">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-1.png');">
+                      <span class="new">New</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">The type and model of the car shown here</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> Instead of <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">Today</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> Number of passengers  : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> Doors : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item new">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-2.png');">
+                      <span class="new">New</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">The type and model of the car shown here</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> Instead of <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">Today</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> Number of passengers  : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> Doors : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item offers">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-3.png');">
+                      <span class="new">New</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">The type and model of the car shown here</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> Instead of <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">Today</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> Number of passengers  : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> Doors : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item wanted">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-4.png');">
+                      <span class="new">New</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">The type and model of the car shown here</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> Instead of <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">Today</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> Number of passengers  : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> Doors : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item offers">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-5.png');">
+                      <span class="new">New</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">The type and model of the car shown here</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> Instead of <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">Today</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> Number of passengers  : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> Doors : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item wanted">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-6.png');">
+                      <span class="new">New</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">The type and model of the car shown here</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> Instead of <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">Today</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> Number of passengers  : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> Doors : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item nearby">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-7.png');">
+                      <span class="new">New</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">The type and model of the car shown here</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> Instead of <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">Today</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> Number of passengers  : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> Doors : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item new">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-2.png');">
+                      <span class="new">New</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">The type and model of the car shown here</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> Instead of <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">Today</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> Number of passengers  : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> Doors : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item nearby">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-5.png');">
+                      <span class="new">New</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">The type and model of the car shown here</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> Instead of <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">Today</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> Number of passengers  : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> Doors : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item cheap">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-7.png');">
+                      <span class="new">New</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">The type and model of the car shown here</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> Instead of <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">Today</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> Number of passengers  : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> Doors : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item cheap">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-6.png');">
+                      <span class="new">New</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">The type and model of the car shown here</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> Instead of <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">Today</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> Number of passengers  : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> Doors : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item nearby">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-1.png');">
+                      <span class="new">New</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">The type and model of the car shown here</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> Instead of <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">Today</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> Number of passengers  : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> Doors : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item nearby">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-4.png');">
+                      <span class="new">New</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">The type and model of the car shown here</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> Instead of <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">Today</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> Number of passengers  : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> Doors : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">View Details</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 element-item nearby">
+                <div class="card">
+                  <a href="#">
+                    <div class="bg-card" style="background-image: url('images/bg-car-3.png');">
+                      <span class="new">New</span>
+                      <span class="discount">50%</span>
+                      <span class="available">off</span>
+                      <i class="fa-solid fa-link link"></i>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <div class="comment">
+                      <div class="evaluation">
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                        <i class="fa-regular fa-star star"></i>
+                      </div>
+                      <i class="fa-regular fa-heart heart"></i>
+                    </div>
+                    
+                    <h5 class="card-title">The type and model of the car shown here</h5>
+                    <p class="money"><span class="currency-new">$</span><span class="price-new">29</span> Instead of <span class="price-old">58</span><span class="currency-old">$</span> / <span class="duration">Today</span></p>
+                    <p class="persons"><i class="fa-regular fa-user"></i> Number of passengers  : <span class="people-number">4</span></p>
+                    <p class="doors"><i class="fa-solid fa-car"></i> Doors : <span class="doors-number">4</span></p>
+                    <a href="#" class="btn view-details">View Details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 mx-auto">
+          <span class="show-more">View More ...</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Section Filter -->
+
+  <!-- Start Footer -->
+  <footer>
+    <div class="footer-head" style="background-image: url('images/bg-follow-us.png');">
+      <h2>Follow us via e-mail</h2>
+    <form>
+      <input type="email" placeholder="Enter your email address" required>
+      <button><i class="fa-solid fa-sort-down sort"></i></button>
+    </form>
+    </div>
+    <div class="footer-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 mx-auto">
+            <div class="row g-5">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="connect-us">
+                  <h2>Contact Us</h2>
+                  <p><a href="mailTo:"><i class="fa-regular fa-envelope email"></i> <span>Info@alrehaili.com</span></a></p>
+                  <p><a href="tel:"><i class="fa-solid fa-phone-flip phone"></i> <span> Unified number : 01000000000</span></a></p>
+                  <ul class="communication-icons">
+                    <li><a href="#"><i class="fa-brands fa-facebook icon"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in icon"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter icon"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube icon"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="speed-links">
+                  <h2>Quick Links</h2>
+                  <div class="links">
+                    <ul class="main">
+                      <li><a href="#">Main</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Our Branches</a></li>
+                      <li><a href="#">Our Team</a></li>
+                      <li><a href="#">Apply Membership</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <ul class="subsidiary">
+                      <li><a href="#">Photo Album</a></li>
+                      <li><a href="#">News</a></li>
+                      <li><a href="#">Performances</a></li>
+                      <li><a href="#">Terms and  Conditions</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="download-programming">
+                  <h2>Download Software</h2>
+                  <a href="#">
+                    <img src="images/google-play.png" alt="google play">
+                  </a>
+                  <a href="#">
+                    <img src="images/app-store.png" alt="app store">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="footer-foot">
+      <div class="container">
+        <div class="row">
+          <div class="col-10 mx-auto">
+            <div class="space-foot">
+              <span>All rights reserved &copy; 2020</span>
+              <span>Dynamic design and development of Information Technology</span>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+    <!-- Start Chat -->
+    <div class="chat-button" data-active="active">
+      <i class="fa-solid fa-comments message-icon"></i>
+      <span>2</span>
+    </div>
+    <div class="chat-message d-none">
+      <span class="delete"><i class="fa-solid fa-xmark del-icon"></i></span>
+      <div class="chats-box">
+        <div class="chat-interface">
+          <p class="text-center">Welcome, we are here to help you, <br/>contact us now</p>
+          <img src="images/support-employee.png" alt="">
+          <span>Available Now</span>
+        </div> 
+        <div class="notes">
+          <p>We Will Reply to You Within Five Minutes</p>
+        </div>
+        <div class="chats">
+          <p class="admin">Your welcome is usually answered within minutes</p>
+          <p class="user">Thank you I want to get some answers about your company</p>
+          <p class="admin">Your welcome is usually answered within minutes</p>
+          <p class="user">Thank you I want to get some answers about your company</p>
+          <p class="user">Thank you I want to get some answers about your company</p>
+        </div>
+      </div>
+      <form class="message-text">
+        <input type="text" placeholder="Write Your Message Here" required>
+        <button><i class="fa-regular fa-paper-plane send-icon"></i></button>
+      </form>
+    </div>
+    <!-- End Chat -->
+
+
+
+
+
+
+
+
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    /************** Start Main Section ****************/
+    // Start Display Input 
+    let checkInput = document.getElementById("check-receipt-delivery"),
+    receiptAndDelivery = document.querySelector(".receipt-delivery"),
+    receipt = document.querySelector(".receipt"),
+    delivery = document.querySelector(".delivery"),
+    receiptAndDeliveryInput = document.getElementById("receipt-delivery"),
+    receiptInput = document.getElementById("receipt"),
+    deliveryInput = document.getElementById("delivery"),
+    boxMap = document.getElementById("box-map");
+
+    checkInput.addEventListener("click", function () {
+    if(this.checked == true ) {
+      receiptAndDelivery.parentElement.classList.add("d-inline-block");
+      receiptAndDelivery.parentElement.classList.remove("d-none");
+
+      receipt.parentElement.classList.remove("d-inline-block");
+      receipt.parentElement.classList.add("d-none");
+
+      delivery.parentElement.classList.remove("d-inline-block");
+      delivery.parentElement.classList.add("d-none");
+
+      // input required
+      receiptAndDeliveryInput.setAttribute("required","true");
+      receiptInput.removeAttribute("required");
+      deliveryInput.removeAttribute("required");
+    } else {
+      receiptAndDelivery.parentElement.classList.add("d-none");
+      receiptAndDelivery.parentElement.classList.remove("d-inline-block");
+
+      receipt.parentElement.classList.remove("d-none");
+      receipt.parentElement.classList.add("d-inline-block");
+
+      delivery.parentElement.classList.remove("d-none");
+      delivery.parentElement.classList.add("d-inline-block");
+
+      // input required
+      receiptAndDeliveryInput.removeAttribute("required");
+      receiptInput.setAttribute("required","true");
+      deliveryInput.setAttribute("required","true");
+    }
+    });
+
+    receiptAndDeliveryInput.oninput = function () {
+      boxMap.classList.remove("d-none");
+      boxMap.classList.add("d-grid");
+      this.setAttribute("checked","");
+    }
+    receiptInput.oninput = function () {
+      boxMap.classList.remove("d-none");
+      boxMap.classList.add("d-grid");
+      this.setAttribute("checked","");
+    }
+    deliveryInput.oninput = function () {
+      boxMap.classList.remove("d-none");
+      boxMap.classList.add("d-grid");
+      this.setAttribute("checked","");
+    }
+    document.addEventListener("click", function (event) {
+      if (event.target.closest(".main-area")) return;
+      boxMap.classList.remove("d-grid");
+      boxMap.classList.add("d-none");
+      receiptAndDeliveryInput.removeAttribute("checked");
+      receiptInput.removeAttribute("checked");
+      deliveryInput.removeAttribute("checked");
+    });
+    // End Display Input 
+
+    // Start Hover to Places 
+    let places = document.querySelectorAll(".main-area .places .place"),
+        airportName = document.querySelector(".map .map-title .airport-name"),
+        airportBranch = document.querySelector(".map .map-title .airport-branch");
+
+    places.forEach(element => {
+      element.addEventListener("mouseover", function () {
+        airportName.textContent = this.children[0].textContent;
+        airportBranch.textContent = this.children[1].textContent;
+      });
+
+      element.addEventListener("click", function () {
+        if (receiptAndDeliveryInput.hasAttribute("checked")) {
+          receiptAndDeliveryInput.value = this.children[0].textContent + " | " + this.children[1].textContent;
+          boxMap.classList.add("d-none");
+        }
+
+        if (receiptInput.hasAttribute("checked")) {
+          receiptInput.value = this.children[0].textContent + " | " + this.children[1].textContent;
+          boxMap.classList.add("d-none");
+        }
+
+        if (deliveryInput.hasAttribute("checked")) {
+          deliveryInput.value = this.children[0].textContent + " | " + this.children[1].textContent;
+          boxMap.classList.add("d-none");
+        }
+      });
+    });
+
+    let placeBox = document.querySelector(".main-area .places");
+    placeBox.addEventListener("mouseout", function () {
+      airportName.textContent = "Airport name";
+      airportBranch.textContent = "Airport address";
+    });
+    // End Hover to Places
+
+    // Start Swiper 
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    // End Swiper /
+    /************** End Main Section ****************/
+
+    /************** Start Section Filter ********************/
+    // Start Element Active in Menu
+    let navFilter = document.querySelectorAll(".filter-menu li"),
+        heightCardBox = document.querySelector(".sec-filter .grid-height .grid .element-item"),
+        heightCardBoxes = document.querySelector(".sec-filter .grid-height");
+    heightCardBoxes.style.height = `${heightCardBox.offsetHeight *2 + 40}px`;
+    navFilter.forEach( element => {
+      element.addEventListener("click", function () {
+        navFilter.forEach(element => {
+          element.classList.remove("active");
+        });
+        this.classList.add("active");
+      });
+    });
+    // End Element Active in Menu
+
+    // Start Isotope 
+    let $grid = $('.grid').isotope({});
+    $(".filter-menu li").on("click", function () {
+      $grid.isotope({
+        filter : $(this).attr("data-filter")
+      });
+    });
+    // End Isotope
+
+    // Start Input Show More
+
+    let showMore = document.getElementsByClassName("show-more"),
+        heightGide = document.getElementsByClassName("grid-height");
+
+    showMore[0].addEventListener("click", function () {
+      if (heightGide[0].getAttribute("data-check-height") == "more") {
+        heightGide[0].style.height = "auto";
+        showMore[0].textContent = "View Less...";
+        heightGide[0].setAttribute("data-check-height", "less");
+      } else {
+        heightGide[0].style.height = `${heightCardBox.offsetHeight *2 + 40}px`;
+        showMore[0].textContent = "View More...";
+        heightGide[0].setAttribute("data-check-height", "more");
+      }
+    });
+    // End Input Show More
+    /***************** End Section Filter *******************/
+  </script>
+</body>
+</html>

@@ -1,0 +1,641 @@
+@media (max-width: 575.9px) {
+  /*############################## Start Main Page ##############################*/
+ /******************************** Start Header **************************/
+  header .head .head-menu {
+    width: 80px;
+  } 
+  header .head .head-logo-company {
+  width: 200px;
+  height: 50px;
+  }
+  header.fixed .head .head-logo-company {
+    width: 200px;
+    height: 50px;
+  }
+  header .head .head-menu li .bars {
+    width: 18px;
+    height: 18px;
+  }
+  header .head .head-menu li .bars span {
+    height: 2px;
+  }
+  header .head .head-menu li a {
+    font-size: 16px;
+  }
+  /******************************** End Header **************************/
+  /********************************** Start aside **********************************/
+  aside {
+    width: 170px;
+  }
+  /********************************** Start aside **********************************/
+  /**************************** Start Section Main ************************/
+  .main .main-content {
+    height: 500px;
+  }
+  .main .swiper {
+    height: 400px;
+  }
+  .main .main-content form .form-row .form-group button {
+    margin-top: 15px;
+  }
+  .main .main-content .form-group .Date-of-receipt-text,
+  .main .main-content .form-group .delivery-date-text {
+    margin-top: 15px;
+  }
+  .main .main-content .main-foot-bar,
+  .main .main-content .btn-book-now {
+    height: 80px;
+  }
+  .main .main-content .main-foot-bar{
+    width: calc( 100% - 120px);
+  }
+  .main .main-content .btn-book-now {
+    left: 0;
+    width: 120px;
+  }
+  .main .main-content .main-foot-bar .listen-with-discount h2 {
+    font-size: 20px;
+  }
+  .main .main-content .btn-book-now h5 {
+    font-size: 20px;
+  }
+  .main .main-content .btn-book-now p {
+    font-size: 13px;
+    font-weight: 200;
+  }
+  .main .main-content .main-area {
+    width: 340px;
+    height: 335px
+  };
+  .main .main-content .main-area .map .map-title .appointment span:first-of-type {
+    display: block;
+  }
+  .main .main-content .main-area .places .place p {
+    margin: 5px;
+  }
+  .main .main-content .main-area .places .place h6 .plane-icon,
+  .main .main-content .main-area .places .place h6 {
+    font-size: 12px;
+  }
+  .main .main-content .main-foot-bar img {
+    width: 150px;
+    height: 100px;
+    margin-top: -40px;
+    margin-right: 15px;
+  }
+  /**************************** End Section Main ************************/
+  /******************************* Start Section Filter *****************/
+  .sec-filter .filter-menu {
+    width: 300px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .sec-filter .filter-menu li {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 5px 12px;
+  }
+  .sec-filter .grid-height {
+    height: 1700px;
+  }
+  /******************************* End Section Filter *****************/
+  /**************************** Start Footer *************************/
+  footer .footer-head {
+    padding: 10px 0;
+    height: 140px;
+  }
+  footer .footer-head h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+  footer .footer-head form input {
+    width: 280px;
+  }
+  footer .footer-body .download-programming a {
+    width: 90%;
+    display: block;
+  }
+  footer .footer-body .download-programming a:first-of-type {
+    margin-left: 15px;
+  }
+  footer .footer-foot .space-foot {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footer-foot .space-foot span:first-of-type {
+    margin-bottom: 7px;
+  }
+  /**************************** End Footer ***************************/
+  /**************************** Start Chat ***************************/
+  .chat-button {
+    width: 65px;
+    height: 65px;
+    bottom: 40px;
+  }
+  .chat-button .message-icon {
+    font-size: 30px;
+  }
+  .chat-button.visible-button {
+    right: 20px;
+    
+  }
+  .chat-message {
+    width: 300px;
+  }
+  /***************************** End Chat  *************************/
+  /*############################## End Main Page ##############################*/
+  /*############################## Start Second Page Page ##############################*/
+  .search-results .result-search {
+    height: 100px;
+  }
+  .search-results .result-search h2 {
+    font-size: 20px;
+  }
+  .search-results .result-search .breadcrumb .breadcrumb-item {
+    font-size: 12px;
+  }
+  .data-search .menu-search .menu-title {
+    flex-wrap: wrap;
+  }
+  .data-search .menu-search .box-card {
+    height: 450px;
+    flex-direction: column;
+  }
+  .data-search .menu-search .box-card .card-image {
+    width: 100%;
+    height: 200px;
+  }
+  .data-search .menu-search .box-card .text-card {
+    width: 100%;
+    height: calc(100% - 200px);
+  }
+  .data-search .menu-search .box-card .text-card .total p {
+    font-size: 14px;
+  }
+  /*############################## End Second Page Page ##############################*/
+}
+
+@media (min-width: 576px) and (max-width: 767.9px) {
+  /*############################## Start Main Page ##############################*/
+  /******************************** Start Header **************************/
+  header .head .head-logo-company {
+    width: 230px;
+    height: 50px;
+  }
+  header.fixed .head .head-logo-company {
+    width: 230px;
+    height: 50px;
+  }
+  header .head .head-menu li .bars {
+    width: 18px;
+    height: 18px;
+  }
+  header .head .head-menu li .bars span {
+    height: 2px;
+  }
+  header .head .head-menu li a {
+    font-size: 16px;
+  }
+  /******************************** End Header **************************/
+  /********************************** Start aside **********************************/
+  aside {
+    width: 200px;
+  }
+  /********************************** Start aside **********************************/
+  /**************************** Start Section Main ************************/
+  .main .main-content {
+    height: 500px;
+  }
+  .main .swiper {
+    height: 400px;
+  }
+  .main .main-content .form-group .Date-of-receipt-text,
+  .main .main-content .form-group .delivery-date-text {
+    margin-top: 15px;
+  }
+  .main .main-content .main-foot-bar,
+  .main .main-content .btn-book-now {
+    height: 100px;
+  }
+  .main .main-content .main-foot-bar{
+    width: calc( 100% - 170px);
+  }
+  
+  .main .main-content .btn-book-now {
+    left: 0;
+    width: 170px;
+  }
+  .main .main-content .main-foot-bar .listen-with-discount h2 {
+    font-size: 20px;
+  }
+  .main .main-content .btn-book-now h5 {
+    font-size: 24px;
+  }
+  .main .main-content .btn-book-now p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .main .main-content .main-foot-bar img {
+    width: 150px;
+    height: 100px;
+    margin-top: -40px;
+    margin-right: 15px;
+  }
+  /**************************** End Section Main ************************/
+  /******************************* Start Section Filter *****************/
+  .sec-filter .filter-menu {
+    width: 410px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .sec-filter .filter-menu li {
+    font-size: 17px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    padding: 10px 20px;
+  }
+  .sec-filter .grid-height {
+    height: 1700px;
+  }
+  /******************************* End Section Filter *****************/
+  /**************************** Start Footer *************************/
+  footer .footer-head h2 {
+    margin-bottom: 25px;
+    font-size: 25px;
+  }
+  footer .footer-head form input {
+    width: 350px;
+  }
+  footer .footer-body .download-programming a {
+    width: 45%;
+    display: inline-block;
+  }
+  footer .footer-body .download-programming a:first-of-type {
+    margin-left: 15px;
+  }
+  /**************************** End Footer ***************************/
+  /*############################## End Main Page ##############################*/
+  /*############################## Start Second Page Page ##############################*/
+  .search-results {
+    height: auto;
+  }
+  .search-results .result-search {
+    height: 120px;
+  }
+  .data-search .menu-search .box-card {
+    height: 235px;
+  }
+  .data-search .menu-search .box-card .text-card .text-card-body .name-car h6 {
+    width: calc(100% - 88px);
+  }
+  .data-search .menu-search .box-card .text-card .text-card-body .name-car .evaluation {
+    width: 88px;
+  }
+  .data-search .menu-search .box-card .text-card .text-card-body .name-car .evaluation .star {
+    color: var(--third-color);
+    font-size: 12px;
+  }
+
+  .search-results .result-search h2 {
+    font-size: 22px;
+  }
+  /*############################## End Second Page Page ##############################*/
+}
+
+@media (min-width: 768px) and (max-width: 991.9px) {
+  /*############################## Start Main Page ##############################*/
+  /******************************** Start Header **************************/
+  header .head .head-logo-company {
+    width: 280px;
+    height: 70px;
+  }
+  header .head .head-menu li .bars {
+    width: 18px;
+    height: 18px;
+  }
+  header .head .head-menu li .bars span {
+    height: 2px;
+  }
+  header .head .head-menu li a {
+    font-size: 16px;
+  }
+  /***************************** End Header ******************************/
+  /********************************** Start aside **********************************/
+  aside {
+    width: 250px;
+  }
+  /********************************** Start aside **********************************/
+  /**************************** Start Section Main ************************/
+  .main .main-content,
+  .main .swiper {
+    height: 500px;
+  }
+  .main .main-content form .form-row label {
+    margin-bottom: 10px;
+  }
+  .main .main-content .main-foot-bar,
+  .main .main-content .btn-book-now {
+    height: 120px;
+  }
+  .main .main-content .main-foot-bar{
+    width: calc( 100% - 170px);
+  }
+  
+  .main .main-content .btn-book-now {
+    left: 0;
+    width: 170px;
+  }
+  .main .main-content .main-foot-bar .listen-with-discount h2 {
+    font-size: 23px;
+  }
+  .main .main-content .btn-book-now h5 {
+    font-size: 26px;
+  }
+  .main .main-content .btn-book-now p {
+    font-size: 14px;
+  }
+  .main .main-content .main-foot-bar img {
+    width: 200px;
+    height: 150px;
+  }
+  /**************************** End Section Main ************************/
+  /******************************* Start Section Filter *****************/
+  .sec-filter .filter-menu {
+    width: 540px; 
+  }
+  .sec-filter .grid-height {
+    height: 1110px;
+  }
+  .sec-filter .filter-menu li {
+    /* font-size: 15px; */
+    padding: 10px 15px;
+  }
+  .sec-filter .grid-height .grid .element-item .card .card-body .card-title ,
+  .sec-filter .grid-height .grid .element-item .card .card-body .money{
+    font-size: 16px;
+  }
+  .sec-filter .grid-height .grid .element-item .card .card-body .money .currency-new,
+  .sec-filter .grid-height .grid .element-item .card .card-body .money .price-new {
+    font-size: 20px;
+  }
+  /******************************* End Section Filter *****************/
+  /******************************* Start Footer *****************/
+  footer .footer-head {
+    padding: 20px 0;
+    height: 180px;
+  }
+  footer .footer-head h2 {
+    margin-bottom: 25px;
+  }
+  footer .footer-body .download-programming a {
+    width: 45%;
+    display: inline-block;
+  }
+  footer .footer-body .download-programming a:first-of-type {
+    margin-left: 25px;
+  }
+  /******************************* Start Footer *****************/
+  /********************************** Start Chat *************************/
+  .chat-button {
+    width: 70px;
+    height: 70px;
+  }
+  .chat-button.visible-button {
+    right: 55px;
+  }
+  .chat-button .message-icon {
+    font-size: 33px;
+  }
+  .chat-message .chat-interface p {
+    font-size: 17px;
+  }
+  .chat-message .chat-interface span,
+  .chat-message .notes,
+  .chat-message p {
+    font-size: 15px;
+  }
+  /******************************** End Chat *****************************/
+  /*############################## End Main Page ##############################*/
+  /*############################## Start Second Page Page ##############################*/
+  
+
+
+
+  
+  /*############################## End Second Page Page ##############################*/
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.9px) {
+  /*############################## Start Main Page ##############################*/
+  /******************************** Start Header **************************/
+
+  /***************************** End Header ******************************/
+  /********************************** Start aside **********************************/
+  aside {
+    width: 300px;
+  }
+  /********************************** Start aside **********************************/
+  /**************************** Start Section Main ************************/
+  .main .main-content,
+  .main .swiper {
+    height: 600px;
+  }
+  .main .main-content form .form-row  label {
+    margin-bottom: 10px;
+  }
+  .main .main-content .form-group .Date-of-receipt-text,
+  .main .main-content .form-group .delivery-date-text {
+    margin-top: 20px;
+  }
+  .main .main-content form .form-row .form-check {
+    padding: 0;
+  }
+  .main .main-content .main-foot-bar .listen-with-discount h2 {
+    font-size: 23px;
+  }
+  .main .main-content .btn-book-now h5 {
+    font-size: 26px;
+  }
+  .main .main-content .btn-book-now p {
+    font-size: 14px;
+  }
+  .main .main-content .main-foot-bar,
+  .main .main-content .btn-book-now {
+    height: 120px;
+  }
+  .main .main-content .btn-book-now {
+    width: 140px;
+    left: -140px;
+  }
+  .main .main-content .main-foot-bar img {
+    width: 200px;
+    height: 150px;
+    margin-right: 20px;
+  }
+  /********************************* End Section Main ******************/
+  /******************************* Start Section Filter *****************/
+  .sec-filter .filter-menu {
+    width: 750px;
+  }
+  .sec-filter .grid-height {
+    height: 1100px;
+  }
+  .sec-filter .grid-height .grid .element-item .card .card-body .card-title ,
+  .sec-filter .grid-height .grid .element-item .card .card-body .money{
+    font-size: 15px;
+  }
+  .sec-filter .grid-height .grid .element-item .card .card-body .money .currency-new,
+  .sec-filter .grid-height .grid .element-item .card .card-body .money .price-new {
+    font-size: 19px;
+  }
+  /***************************** End Section Filter *******************/
+  /******************************* Start Footer *************************/
+  footer .footer-body .connect-us h2,
+  footer .footer-body .speed-links h2,
+  footer .footer-body .download-programming h2 {
+    font-size: 22px;
+  }
+  footer .footer-body .speed-links .links ul li a {
+    font-size: 15px;
+  }
+  footer .footer-body .download-programming a {
+    height: 80px;
+  }
+  /******************************* End Footer ************************/
+  /********************************** Start Chat *************************/
+  .chat-button {
+    width: 70px;
+    height: 70px;
+  }
+  .chat-button.visible-button {
+    right: 55px;
+  }
+  .chat-button .message-icon {
+    font-size: 33px;
+  }
+  .chat-message .chat-interface p {
+    font-size: 17px;
+  }
+  .chat-message .chat-interface span,
+  .chat-message .notes,
+  .chat-message p {
+    font-size: 15px;
+  }
+  /******************************** End Chat *****************************/
+  /*############################## End Main Page ##############################*/
+  /*############################## Start Second Page Page ##############################*/
+  /* Start Data Search */
+  .data-search .filter-cars .buttons button {
+    font-size: 14px;
+  }
+  .data-search .filter-cars .buttons button:first-of-type {
+    width: 40%;
+  }
+  .data-search .filter-cars .buttons button:last-of-type {
+    width: 55%;
+  }
+  /* End Data Search */
+  /* Start Menu Search */
+  .data-search .menu-search .box-card {
+    height: 260px;
+  }
+  .data-search .menu-search .box-card .text-card .text-card-body .name-car {
+    flex-direction: column;
+  }
+  .data-search .menu-search .box-card .text-card .text-card-body .name-car h6 {
+    order: 2;
+  }
+  .data-search .menu-search .box-card .text-card .text-card-body .name-car .evaluation {
+    order: 1;
+    margin-right: auto;
+    margin-bottom: 5px;
+  }
+  /* End Menu Search */
+
+
+
+
+  /*############################## End Second Page Page ##############################*/
+}
+
+
+@media (min-width: 1200px) and (max-width : 1399.9px) {
+  /*############################## Start Main Page ##############################*/
+  /******************************* Start Header ****************************/
+
+  /********************************** End Header *****************************/
+  /********************************** Start aside **********************************/
+  aside {
+    width: 350px;
+  }
+  /********************************** Start aside **********************************/
+  /********************************** Start Section Main **********************/
+  .main .main-content,
+  .main .swiper {
+    height: 526px;
+  }
+  .main .main-content .main-foot-bar,
+  .main .main-content .btn-book-now {
+    height: 150px;
+  }
+  .main .main-content .main-foot-bar img {
+    margin-top: -70px;
+    margin-right: 10px;
+    width: 250px;
+    height: 170px;
+    object-fit: cover;
+  }
+  .main .main-content .main-foot-bar .listen-with-discount h2 {
+    font-size: 28px;
+  }
+  /*************************** End Section Main ****************************/
+  /**************************** Start Section Filter ************************/
+  .sec-filter .grid-height {
+    height: 1110px;
+  }
+  .sec-filter .grid-height .grid .element-item .card .card-body .card-title ,
+  .sec-filter .grid-height .grid .element-item .card .card-body .money{
+    font-size: 16px;
+  }
+  .sec-filter .grid-height .grid .element-item .card .card-body .money .currency-new,
+  .sec-filter .grid-height .grid .element-item .card .card-body .money .price-new {
+    font-size: 20px;
+  }
+  /*********************************** End Section Filter *********************/
+  /********************************** Start Chat *************************/
+  .chat-button {
+    width: 70px;
+    height: 70px;
+  }
+  .chat-button.visible-button {
+    right: 55px;
+  }
+  .chat-button .message-icon {
+    font-size: 35px;
+  }
+  .chat-message .chat-interface p {
+    font-size: 17px;
+  }
+  .chat-message .chat-interface span,
+  .chat-message .notes,
+  .chat-message p {
+    font-size: 15px;
+  }
+  /******************************** End Chat *****************************/
+  /*############################## End Main Page ##############################*/
+  /*############################## Start Second Page Page ##############################*/
+
+
+
+
+
+
+
+  /*############################## End Second Page Page ##############################*/
+
+}
+
+
+@media (min-width: 1400px) {}
